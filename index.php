@@ -1,0 +1,1 @@
+<script>window.location="<?php echo $_SERVER['name'];?>"</script>
