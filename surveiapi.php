@@ -12,29 +12,8 @@ Author URI: https://www.usahawan-maju.blogspot.com/
 Copyright 2022
 */
 
-
-/**
- * Register the "book" custom post type
- */
-// function pluginprefix_setup_post_type() {
-//     register_post_type( 'book', ['public' => true ] ); 
-// } 
-// add_action( 'init', 'kudus_plugintSurvei_isi' );
-
-// /**
-//  * Activate the plugin.
-//  */
-// function pluginprefix_activate() { 
-//     // Trigger our function that registers the custom post type plugin.
-//     pluginprefix_setup_post_type(); 
-//     // Clear the permalinks after the post type has been registered.
-//     flush_rewrite_rules(); 
-// }
-// register_activation_hook( __FILE__, 'kudus_plugintSurvei_isi' );
-
-
 require_once 'survei_curl.php';
-// Make sure we don't expose any info if called directly
+
 function kudus_plugintSurvei_isi(){
 	$from_opd = explode(".",$_SERVER["SERVER_NAME"]);
 	$survei_api_culr = new ServiceCurl();    
