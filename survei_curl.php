@@ -12,7 +12,7 @@ class ServiceCurl {
 		CURLOPT_SSL_VERIFYPEER => false,
 		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 		CURLOPT_CUSTOMREQUEST => 'POST',
-		CURLOPT_POSTFIELDS => array('from_url' => $key),
+		CURLOPT_POSTFIELDS => array(),
 		CURLOPT_HTTPHEADER => array(
 			'Cookie: ci_session=bb5l04mn8iq05kfc0vtb8ku1sl501hbq'
 		),
@@ -34,10 +34,8 @@ class ServiceCurl {
 		CURLOPT_SSL_VERIFYPEER => false,
 		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 		CURLOPT_CUSTOMREQUEST => 'POST',
-		CURLOPT_POSTFIELDS => array('from_url' => $key),
-// 		CURLOPT_HTTPHEADER => array(
-// 			'Cookie: ci_session=bb5l04mn8iq05kfc0vtb8ku1sl501hbq'
-// 		),
+		CURLOPT_POSTFIELDS => array(),
+
 	));
 
 	$response = curl_exec($curl);
