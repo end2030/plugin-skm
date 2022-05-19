@@ -188,12 +188,12 @@ function kudus_plugintSurvei_hasil(){
 			$id_surveily = explode('_',$valtabs[0]);
 			echo '<div id="'.$valtabs[0].'" class="tabcontent_survei">
 			<center><h3>'.$valtabs[1].'</center></h3>';
+			$total_responden = $valtabs['2']['jenis_kelamin']['L']['jumlah']+$valtabs['2']['jenis_kelamin']['P']['jumlah'];
 			unset($valtabs['2']['key_survei']);
 			unset($valtabs['2']['pendidikan']);
 			unset($valtabs['2']['id_survei']);
 			unset($valtabs['2']['nama_responden']);
 			unset($valtabs['2']['jenis_kelamin']);
-			$total_responden = $valtabs['2']['kirim_survei']['Submit']['jumlah'];
 			unset($valtabs['2']['kirim_survei']);
 			echo "Jumlah Responden : ".$total_responden;
 			$no = 1;
